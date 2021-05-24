@@ -149,16 +149,16 @@ dags:
     ##
     syncWait: 60
 
-    ## the name of a pre-created Secret with git http credentials
+    ## the name of a pre-created Kubernetes Secret containing the git http credentials
     ##
     httpSecret: "git-creds"
 
     ## the key in `dags.gitSync.httpSecret` with your git username
-    ##
+    ## (e.g. username is a key in the 'data' or 'stringData')
     httpSecretUsernameKey: username
 
     ## the key in `dags.gitSync.httpSecret` with your git password/token
-    ##
+    ## (e.g. password is a key in the 'data' or 'stringData')
     httpSecretPasswordKey: password
 
 ###################################
