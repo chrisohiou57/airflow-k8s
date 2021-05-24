@@ -16,8 +16,8 @@ export VALUES_FILE=./helm/kubernetes-executor-values.yaml
 
 You will need to create the K8s Namespace and Secret that contains GitHub credentials prior to installing the Helm chart. You can do that by running:
 ```
-kubectl apply -f namespace.yaml
-kubectl apply -f git-sync-secret.yaml
+kubectl apply -f helm/namespace.yaml
+kubectl apply -f helm/git-sync-secret.yaml
 ```
 
 ##### Install the chart (Helm 3)
