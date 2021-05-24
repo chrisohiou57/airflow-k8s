@@ -35,6 +35,8 @@ kubectl port-forward --namespace $NAMESPACE $POD_NAME 8080:8080
 ##### If running in minikube, you can see how to access the app by running:
 ```minikube service --url airflow-cluster-web -n airflow```
 
+You find the service name by running ```kubectl get service -n $NAMESPACE```
+
 ##### Uninstall the chart (Helm 3)
 ```helm uninstall $RELEASE_NAME -n $NAMESPACE```
 
